@@ -27,7 +27,7 @@ const Signup = () => {
 
   return (
     <main className="signup flex justify-center items-center">
-      <form className="flex flex-col w-[28rem] h-[28rem] mb-[7rem] mt-[3rem] p-[4rem] rounded-[10px] shadow-lg" onSubmit={handleSubmit}>
+      <form className="flex flex-col w-[28rem] h-[28rem] mb-[7rem] mt-[3rem] p-[4rem] rounded-[10px] shadow-2xl" onSubmit={handleSubmit}>
         <h1 className="flex justify-center text-[1.7rem] font-semibold mt-[-2rem] mb-[2rem]">Signup</h1>
         <input
           required
