@@ -31,7 +31,7 @@ const Navbar = () => {
     <main className="navbar flex justify-between items-center p-[1.2rem] border-b-4 border-gray-200 mb-[2rem]">
       <section className="logoDiv">
         <Link to="/">
-          <h1 className="logo text-[25px] text-blueColor">
+          <h1 className="logo text-[25px] text-gray-900">
             <strong>Job</strong>Search
           </h1>
         </Link>
@@ -66,7 +66,7 @@ const Navbar = () => {
                   dispatch(logout());
                   setMenu(false);
                 }}
-                className="absolute cursor-pointer bottom-4 flex h-[1rem] w-[100%] left-[-1px] border-t-[2px] border-blue-600"
+                className="absolute cursor-pointer bottom-4 flex h-[1rem] w-[100%] left-[-1px] border-t-[2px] border-gray-900"
               >
                 <p className="absolute right-[5rem]">Sign Out</p>
               </div>

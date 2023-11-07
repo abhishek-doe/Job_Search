@@ -14,8 +14,7 @@ const Jobs = () => {
   const navigate = useNavigate()
 
   const jobElement =
-    jobData &&
-    filteredJobs.map((job) => {
+    jobData.map((job) => {
       const { company, location, role, position, image, salary, mode, arrangement } = job;
       return (
         <div className="group w-[20rem] p-[20px] bg-white rounded-[10px] duration-500 hover:bg-[#4682b4] shadow-lg shadow-greyIsh-400/700 hover:shadow-lg" key={job.id} >
@@ -64,7 +63,7 @@ const Jobs = () => {
     });
   return (
     <div className="flex items-center justify-center">
-      <div className="jobContainer grid grid-cols-3 2xl:grid-cols-2 md:flex gap-10 justify-center flex-wrap items-center py-6">{jobElement}</div>
+      <div className="jobContainer grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10 justify-center flex-wrap items-center py-6">{jobElement}</div>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import {BsFacebook} from "react-icons/bs"
 
 const Footer = () => {
   return (
-    <main className='footer grid grid-cols-5 2xl:grid-cols-2 p-[5rem] mb-4 bg-blueColor rounded-[10px] gap-8 grid grid-cols-5 m-auto items-center justify-center'>
+    <main className='footer grid grid-cols-5 2xl:grid-cols-2 p-[5rem] mb-4 bg-gray-900 rounded-[10px] gap-8 grid grid-cols-5 m-auto items-center justify-center'>
 
       <section>
       <div className='logoDiv'>
@@ -47,9 +47,9 @@ const Footer = () => {
         <div>
           <small className='text-[14px] text-white'>jobsearch@gmail.com</small>
           <div className='icons flex gap-4 py-[1rem]'>
-            <AiFillInstagram  className='h-[35px] w-[35px] bg-white rounded-full icon text-blueColor'/>
-            <BsFacebook       className='h-[35px] w-[35px] bg-white rounded-full icon text-blueColor'/>
-            <AiOutlineTwitter  className='h-[35px] w-[35px] bg-white rounded-full icon text-blueColor'/>
+            <AiFillInstagram  className='h-[35px] w-[35px] bg-white rounded-full icon text-gray-900'/>
+            <BsFacebook       className='h-[35px] w-[35px] bg-white rounded-full icon text-gray-900'/>
+            <AiOutlineTwitter  className='h-[35px] w-[35px] bg-white rounded-full icon text-gray-900'/>
           </div>
         </div>
       </section>
