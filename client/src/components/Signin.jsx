@@ -26,7 +26,7 @@ const Signup = () => {
   }
   return (
     <main className="signin mb-[5rem] flex justify-center items-center">
-      <form className="flex flex-col w-[28rem] h-[25rem] p-[4rem] rounded-[10px] shadow-lg" onSubmit={handleSubmit}>
+      <form className="flex flex-col w-[28rem] h-[25rem] p-[4rem] rounded-[10px] shadow-2xl" onSubmit={handleSubmit}>
         <h1 className="flex justify-center text-[1.7rem] font-semibold mt-[-2rem] mb-[2rem]">Signin</h1>
         <input onChange={e => setEmail(e.target.value)} type="email" placeholder="Enter Email..." className="email border border-[#747474] w-[19rem] rounded-[5px] p-[0.5rem]"/><br />
         <input onChange={e => setPassword(e.target.value)} type="password" placeholder="Enter Password..." className="password border border-[#747474] w-[19rem] rounded-[5px] p-[0.6rem]"/><br />
