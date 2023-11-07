@@ -3,7 +3,7 @@ import {BsFacebook} from "react-icons/bs"
 
 const Footer = () => {
   return (
-    <main className='footer grid grid-cols-5 2xl:grid-cols-2 p-[5rem] mb-4 bg-gray-900 rounded-[10px] gap-8 grid grid-cols-5 m-auto items-center justify-center'>
+    <main className='footer grid grid-cols-5 2xl:grid-cols-2 p-[5rem] mb-4 bg-gray-900 rounded-[10px] gap-8 items-start justify-center'>
 
       <section>
       <div className='logoDiv'>

@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
 
 const JobDetail = () => {
   const data = useSelector((state) => state.job.value);
@@ -7,7 +8,7 @@ const JobDetail = () => {
 
   return (
     <div className="flex justify-center">
-      <main className="flex flex-col justify-center border border-[#00a4e9] h-[28rem] w-[50rem] p-[2rem] mb-[3rem] rounded-[10px]">
+      <main className="flex flex-col justify-center border border-gray-800 h-[28rem] w-[50rem] p-[2rem] mb-[3rem] rounded-[10px]">
         <h1 className="font-semibold text-semibold text-[1.4rem]">{data?.position}</h1>
         <h5>{data?.location}</h5>
         <p className="text-[0.9rem] mt-[1rem]">{data?.role}</p>
@@ -25,9 +26,9 @@ const JobDetail = () => {
           <h3 className="font-semibold">{data?.company}</h3>
         </div>
         <button onClick={()=> {
-          alert("APPLICATION SUBMITTED")
+          toast.success(`Application for ${data?.position} at ${data?.company} applied successfully`);
           navigate('/')
-          }} className="bg-blueColor p-[0.5rem] rounded-[5px] text-white font-semibold flex items-center justify-center mt-[2rem]">Submit Application</button>
+          }} className="bg-gray-800 p-[0.5rem] rounded-[5px] text-white font-semibold flex items-center justify-center mt-[2rem]">Submit Application</button>
       </main>
     </div>
   );

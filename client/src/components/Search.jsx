@@ -50,7 +50,7 @@ const Search = () => {
   }, [filter, dispatch]);
 
   return (
-    <main className="searchDiv grid gap-10 bg-greyIsh rounded-[10px] p-[3rem] flex justify-center items-center">
+    <main className="searchDiv gap-10 bg-greyIsh rounded-[10px] p-[3rem] flex-col flex justify-center items-center">
       <form action="">
         <section className="firstDiv flex justify-between 2xl:flex-col 2xl:border-cyan-600 items-center rounded-[10px] gap-[10px] bg-white p-5 shadow-lg shadow-greyIsh-700 ">
           <div className="flex gap-2 items-center">

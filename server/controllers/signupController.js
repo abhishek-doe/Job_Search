@@ -31,7 +31,7 @@ const createUser =asyncHandler(async (req, res) => {
             name,
             email
         },
-        process.env.SECRET_KET,
+        process.env.SECRET_KEY,
         {
             expiresIn: "2h"
         }

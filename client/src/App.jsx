@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { Routes, Route } from "react-router-dom";
 import ProtectedRoutes from "./ProtectedRoutes";
+import {Toaster} from "react-hot-toast";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/signup" element={<Signup />} />
         <Route path="/signin" element={<Signin />} />
       </Routes>
+      <Toaster />
       <Footer />
     </main>
   );
